@@ -30,7 +30,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const modelName = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
+    const modelName = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
     const result = await analyzeContract(text, apiKey, modelName);
     res.json(result);
   } catch (error) {

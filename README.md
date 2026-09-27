@@ -41,7 +41,7 @@ _See the deployed application for a live demo._
 |-------|-----------|
 | Frontend | React 19, Vite, Tailwind CSS v4 |
 | Backend | Node.js, Express |
-| AI | Google Gemini API (`gemini-2.0-flash`) |
+| AI | Google Gemini API (`gemini-3.8-flash`) |
 | Deployment | Vercel / Render |
 
 ## 🤖 Gemini API Integration
@@ -148,7 +148,7 @@ Because the Express server serves both the production API endpoints (`/api/extra
    * **Start Command**: `node server/index.js`
 4. In **Environment Variables**, add:
    * `GEMINI_API_KEY`: Your Google Gemini API Key
-   * `GEMINI_MODEL`: `gemini-3.8-flash` (or `gemini-2.0-flash`)
+   * `GEMINI_MODEL`: `gemini-3.8-flash`
 5. Deploy. Render will automatically bind the `PORT` and provide your live HTTPS URL.
 
 ### Option B: Frontend on Vercel + Backend on Render
