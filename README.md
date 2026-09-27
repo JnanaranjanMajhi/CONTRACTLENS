@@ -86,8 +86,8 @@ Gemini is **essential** to ContractLens — removing it would eliminate the enti
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/contractlens.git
-cd contractlens
+git clone https://github.com/JnanaranjanMajhi/CONTRACTLENS.git
+cd CONTRACTLENS
 
 # Install
 npm install
