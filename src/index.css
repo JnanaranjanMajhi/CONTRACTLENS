@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #FBFBFA;
+    color: #1C1917;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Document Serif Typography for Original Contract */
+.font-document {
+  font-family: 'Source Serif 4', Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+/* Subtle, clean scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D6D3D1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A29E;
+}
+
+/* Subtle linear progress for loading state */
+@keyframes linear-progress {
+  0%   { width: 3%; }
+  20%  { width: 25%; }
+  45%  { width: 52%; }
+  70%  { width: 78%; }
+  90%  { width: 92%; }
+  100% { width: 98%; }
+}
+.animate-progress-clean {
+  animation: linear-progress 18s cubic-bezier(0.2, 0, 0.2, 1) forwards;
+}
+
+/* Clean, crisp fade transition */
+@keyframes clean-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-clean-fade {
+  animation: clean-fade-in 0.25s ease-out both;
+}
+
+/* Modal slide up */
+@keyframes clean-modal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.99) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.animate-clean-modal {
+  animation: clean-modal-in 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
